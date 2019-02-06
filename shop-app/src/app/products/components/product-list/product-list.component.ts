@@ -1,9 +1,8 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from '../../shared/models';
-import { RoutingKeys } from 'src/app/core/routing/routing-keys.enum';
-import { ProductService } from './../../shared/services';
+import { RoutingKeys } from 'src/app/_core/routing/routing-keys.enum';
+import { Product, ProductService } from './../../shared';
 
 @Component({
   selector: 'app-product-list',

@@ -1,0 +1,17 @@
+<div *ngIf="product">
+  <div>Product id: {{product.id}}</div>
+  <div>
+    <span>Product name:</span>
+    <input [(ngModel)]="product.name" type="text" />
+  </div>
+  <div>
+    <span>Product price:</span>
+    <input [(ngModel)]="product.price" type="number" />
+  </div>
+  <div>
+    <span>Product description:</span>
+    <textarea [(ngModel)]="product.description"></textarea>
+  </div>
+  <button (click)="onSaveProduct()">Save</button>
+  <app-go-back></app-go-back>
+</div>

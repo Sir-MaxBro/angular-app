@@ -1,0 +1,13 @@
+@import '../../../app.component.scss';
+
+.user-info {
+
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+
+  &__name {
+    font-weight: 700;
+  }
+}

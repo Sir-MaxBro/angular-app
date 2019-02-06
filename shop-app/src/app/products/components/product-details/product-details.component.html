@@ -1,6 +1,8 @@
 <div *ngIf="product">
   <div>Product id: {{product.id}}</div>
   <div>Product name: {{product.name}}</div>
+  <div>Product price: {{product.price | price}}</div>
   <div>Product description: {{product.description}}</div>
-  <button (click)="onGoBack()">Go back</button>
+  <app-go-back></app-go-back>
+  <button (click)="onEditProduct()">Edit</button>
 </div>

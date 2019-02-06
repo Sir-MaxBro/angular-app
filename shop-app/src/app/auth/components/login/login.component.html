@@ -1,0 +1,17 @@
+<div>
+  <h2>Please, log in</h2>
+  <div>
+    <div>Login</div>
+    <div>
+      <input [(ngModel)]="userAuth.login" type="text" required/>
+    </div>
+    <div>Password</div>
+    <div>
+      <input [(ngModel)]="userAuth.password" type="password" required/>
+    </div>
+    <button (click)="onTryLogin()" [disabled]="canLogin">Log in</button>
+  </div>
+  <p *ngIf="loginErrorMessage">
+    {{loginErrorMessage}}
+  </p>
+</div>
