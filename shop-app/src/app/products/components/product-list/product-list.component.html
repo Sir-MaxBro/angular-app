@@ -1,0 +1,7 @@
+<div>
+  <ul *ngFor="let product of products">
+    <li>
+      <app-product-item [product]="product" (openDetails)="onOpenDetails($event)"></app-product-item>
+    </li>
+  </ul>
+</div>

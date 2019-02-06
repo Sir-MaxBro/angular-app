@@ -1,0 +1,16 @@
+$mainFontSize: 32px;
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__logo {
+    height: inherit;
+  }
+
+  &__title {
+    font-size: $mainFontSize;
+  }
+}
